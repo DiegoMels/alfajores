@@ -9,6 +9,7 @@ public class ControladorCargar implements MouseListener {
     private JTextField alfajor_Chocolate;
     private JTextField alfajor_DulcedeLeche;
     private JTextField alfajor_Fruta;
+    private JTextField cantidad_Cajas;
     private Datos datos;
     private Double contCajas;
     
@@ -16,6 +17,7 @@ public class ControladorCargar implements MouseListener {
             this.alfajor_Chocolate = txtAlfajor_Chocolate;
             this.alfajor_DulcedeLeche = txtAlfajor_DulcedeLeche;
             this.alfajor_Fruta = txtAlfajor_Fruta;
+            this.cantidad_Cajas = txtCantidad_Cajas;
         }
 
         @Override
@@ -32,7 +34,7 @@ public class ControladorCargar implements MouseListener {
                  dulce = dulce - 1;
                  fruta = fruta - 1;
                 }
-                
+                cantidad_Cajas.setText(contCajas.toString());
                 System.out.println("Cantidad de cajas realizadas: "+ contCajas);
                 System.out.println("     ");
                 System.out.println("Sobrantes de Chocolate: "+ choco);
