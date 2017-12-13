@@ -22,41 +22,26 @@ public class ControladorCargar implements MouseListener {
 
         @Override
         public void mouseClicked(MouseEvent me) {
-            
-           // datos = new Datos(alfajor_Chocolate, alfajor_DulcedeLeche, alfajor_Fruta);
-                double choco = Double.parseDouble(alfajor_Chocolate.getText());
+                
+                datos = new Datos(alfajor_Chocolate, alfajor_DulcedeLeche, alfajor_Fruta, cantidad_Cajas);
+                datos.Datos();
+                
+                /*double choco = Double.parseDouble(alfajor_Chocolate.getText());
                 double dulce = Double.parseDouble(alfajor_DulcedeLeche.getText());
                 double fruta = Double.parseDouble(alfajor_Fruta.getText());
                 contCajas = 0.0;
-                while ((choco >= 4) && (dulce >= 1) && (fruta >= 1)){
-                 contCajas = contCajas + 1;
-                 choco = choco - 4;
-                 dulce = dulce - 1;
-                 fruta = fruta - 1;
-                }
+                    while ((choco >= 4) && (dulce >= 1) && (fruta >= 1)){
+                     contCajas = contCajas + 1;
+                     choco = choco - 4;
+                     dulce = dulce - 1;
+                     fruta = fruta - 1;
+                    }
                 cantidad_Cajas.setText(contCajas.toString());
                 System.out.println("Cantidad de cajas realizadas: "+ contCajas);
                 System.out.println("     ");
                 System.out.println("Sobrantes de Chocolate: "+ choco);
                 System.out.println("Sobrantes de Dulce de Leche: "+ dulce);
-                System.out.println("Sobrantes de Fruta: "+ fruta);
-          
-            
-            
-            
-        ////////////////////////////////////////////////////////////////////////
-           /* contCajas = 0.0;
-            while ((Double.valueOf(alfajor_Chocolate.getText()) >= 4) && (Double.valueOf(alfajor_DulcedeLeche.getText()) >= 1 && (Double.valueOf(alfajor_Fruta.getText()) >= 1))){
-                contCajas = contCajas + 1 ;
-            }*/
-        ////////////////////////////////////////////////////////////////////////
-       /* while ((alfajorChoco >= 4) && (alfajorDulce >= 1) && (alfajorFruta >= 1)){
-            alfajorChoco = alfajorChoco - 4;
-            alfajorDulce = alfajorDulce - 1;
-            alfajorFruta = alfajorFruta - 1;
-            contCajas = contCajas + 1;
-        }*/
-        ////////////////////////////////////////////////////////////////////////    
+                System.out.println("Sobrantes de Fruta: "+ fruta);*/
         }
 
         @Override
@@ -74,5 +59,7 @@ public class ControladorCargar implements MouseListener {
         @Override
         public void mouseExited(MouseEvent me) {
         }
+
+    
     
 }
